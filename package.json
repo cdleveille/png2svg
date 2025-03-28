@@ -1,0 +1,20 @@
+{
+  "name": "png2svg",
+  "version": "1.0.0",
+  "description": "Convert all PNG files in a directory to SVG format. Works best for low-res images such as pixel art.",
+  "author": "Chris Leveille <cdleveille@gmail.com>",
+  "license": "MIT",
+  "module": "src/main.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "compile": "bun build --minify --sourcemap --bytecode --compile src/main.ts --outfile build/png2svg"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "jimp": "^1.6.0"
+  }
+}
